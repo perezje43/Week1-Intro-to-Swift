@@ -15,12 +15,12 @@ func stringToNumber(string: String) -> Int?
 
 // Write a function that takes in a tuple (code, message) and returns a string by using interpolation
 
-func tupleInterpolation (code: Int, message: String) -> String
+func tupleInterpolation (myTuple: (code: Int, message: String)) -> String
 {
-    return "\(code): \(message)"
+    return "Sorry! \(myTuple.code): \(myTuple.message)"
 }
 
-tupleInterpolation(404, message: "Not found")
+tupleInterpolation((404, "Not found"))
 
 
 
